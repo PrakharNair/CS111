@@ -1,0 +1,104 @@
+PROBLEM 1
+
+1.
+NOTE:
+Since theoretically, in a selection sort, you can determine the number of times it passes through by just looking at it, it's easy to say that 
+it will pass through the array n - 1 times, n being the length of the array.
+
+Therefore, the answer is 7. I will provide work.
+ 
+Original
+M U E J R Q X B
+
+1
+B M U E J R Q X
+2
+B E M U J R Q X
+3
+B E J M U R Q X
+4
+B E J M Q U R X
+5
+B E J M Q U R X
+6
+B E J M Q R U X
+7
+B E J M Q R U X
+
+
+2.
+
+Original
+M U E J R Q X B
+
+1
+M U E J R Q X B
+2
+M U E J R Q X B
+3
+E M U J R Q X B
+4
+E J M U R Q X B
+5
+E J M R U Q X B
+6
+E J M Q R U X B
+7
+E J M Q R U X B
+8
+B E J M Q R U X
+
+It will take 8 passes to completely sort it alphabetically.
+
+PROBLEM 2
+
+
+a. Determine if 2 arrays contain the same elements
+
+1. To solve this problem, you would have to run a for loop that would repeat for the length of both arrays. Then you would have to run through each element in array a, and compare it to array b. This would be another for loop.
+2. Naturally the size would influence this algorithm. Also if the loop was sorted, it would cause the loop to run more effectively.
+3. -Sorting 
+   -Checking
+4. -Sorting O(log(N))
+   -Checking O(N)
+5. Best Case: there would be no sorting necessary, and there will only be O(n) operations used.
+   Worst Case: Every element in both arrays need to be rearranged and at the same time wit will need to be checked throughout thoroughyl.
+6. Based on the worst case input:
+	O(log(N)) * O(N) = O(Nlog(N)).
+
+b. Counting total number characters that have a duplicate within a string (i.e. "gigi the gato" would result in 7 (g x 3 + i x 2 + t x 2)
+
+1. This problem is deceivingly more difficult than it looks. To solve it, only one for loop is needed and it will run through a single for loop, and add to a counter if the requirement is met. The for loop would go obviously character by character and add to the counter only if a character appears more than once.
+2. The only thing that would affect this algorithm is size. The algorithm does not have to be sorted to solve it, though it can be.
+3. -Checking
+4. -Checking O(N)
+5. Best Case: There is only one letter, therefore it will only go through the loop once making it the most efficient it can possibly be.
+   Worst Case: There is no doubles, or the last character is a double, forcing the loop to run through the maximum amount of times.
+6. Based on the Worst Case input:
+	O(N).
+	This would be because it would just be forced to go through the entire loop. 
+	
+c. Finding an empty row in a 2-D array where empty is defined as an element with a 0 entry.
+
+1. To solve this, there will be two, nested for loops. And within that, there will be sorting within each row. 
+2. Size of rows and columns will affect the efficiency of this algorithm.
+3. -Check rows 
+   -Check columns
+4. -Check rows O(N)
+   -Check columns O(N)
+5. Best Case: Every row would be empty, allowing for easy run through each loop.
+   Worst case: There would only be 1 empty row, or none, which would force the loop to be ran through each time possible.
+6. Based on the Worst Case input:
+   O(N) * O(N) = O(N^2)
+
+
+
+
+
+
+
+
+
+
+
+
